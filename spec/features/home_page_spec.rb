@@ -6,7 +6,9 @@ RSpec.feature 'home page' do
 
   scenario 'guest user visits the home page' do
     home_page.visit_page
-    expect(page).to have_content(/set_your_future_logo/)
+    expect(page.find('#home-logo')['src']).to have_content(/set_your_future_logo/)
+    expect(page).to have_content('Set Your Future')
+    expect(page).to have_content('Bilingual Memes!')
     expect(page).to have_content(/href="\/Inicia Sesión"/)
     expect(page).to have_content(/href="\/Regístrate"/)
   end
