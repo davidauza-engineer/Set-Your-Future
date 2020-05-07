@@ -64,3 +64,6 @@ Lint/AmbiguousBlockAssociation:
 
   Style/Documentation:
     Enabled: false
+
+Capybara/FeatureMethods
+  Enabled: false
