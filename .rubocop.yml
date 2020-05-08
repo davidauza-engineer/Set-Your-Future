@@ -62,8 +62,8 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
 
-  Style/Documentation:
-    Enabled: false
+Style/Documentation:
+  Enabled: false
 
 Capybara/FeatureMethods:
   Enabled: false
