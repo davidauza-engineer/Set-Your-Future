@@ -16,3 +16,26 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+// variables
+$standard-margin: 8px;
+$double-margin: 16px;
+
+$font-small: 12px;
+$font-medium: 20px;
+$font-large: 28px;
+
+$syf-dark-gray: #434b54;
+$syf-medium-gray: #878A8F;
+$syf-light-gray: #989DA3;
+$syf-blue: #3778c2;
+
+$standard-button: 48px;
+
+// Classes
+
+.view {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $syf-blue;
+}
