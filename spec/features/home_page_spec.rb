@@ -9,7 +9,7 @@ RSpec.feature 'home page' do
     expect(page.find('#home-logo')['src']).to have_content(/set_your_future_logo/)
     expect(page).to have_content('Set Your Future')
     expect(page).to have_content('Bilingual Memes!')
-    expect(page).to have_content(/href="\/Inicia Sesión"/)
-    expect(page).to have_content(/href="\/Regístrate"/)
+    expect(page).to have_selector(:link, 'INICIA SESIÓN')
+    expect(page).to have_content(:link, 'REGÍSTRATE')
   end
 end
