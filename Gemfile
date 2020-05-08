@@ -41,6 +41,7 @@ group :development, :test do
   gem 'rubocop-rspec'
   # rspec related gems
   gem 'database_cleaner'
+  gem 'factory_bot_rails'
   gem 'rspec-rails'
 end
 
@@ -55,8 +56,8 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'selenium-webdriver'
   gem 'rails-controller-testing'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
