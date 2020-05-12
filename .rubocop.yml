@@ -75,3 +75,6 @@ RSpec/ExampleLength:
 RSpec/MultipleExpectations:
   Exclude:
     - spec/features/*
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
