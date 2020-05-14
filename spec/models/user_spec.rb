@@ -56,5 +56,13 @@ RSpec.describe User, type: :model do
 
       it { is_expected.to validate_length_of(:password).is_at_most(72) }
     end
+
+    describe 'password_confirmation' do
+      it { is_expected.to validate_presence_of(:password_confirmation) }
+
+      it { is_expected.to validate_length_of(:password_confirmation).is_at_least(6) }
+
+      it { is_expected.to validate_length_of(:password_confirmation).is_at_most(72) }
+    end
   end
 end
