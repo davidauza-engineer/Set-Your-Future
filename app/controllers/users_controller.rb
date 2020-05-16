@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
-
   attr_reader :user
+
+  def index
+    redirect_to registrate_url
+  end
 
   def new
     @user = User.new
@@ -12,7 +15,6 @@ class UsersController < ApplicationController
       redirect_to "/profile/#{@user.id}", notice: "Gracias por registrarte #{@user.username}"
     else
       render :new
-      # TODO: Check the reloading at this point
     end
   end
 

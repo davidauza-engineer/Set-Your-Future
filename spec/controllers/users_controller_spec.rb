@@ -3,6 +3,13 @@ require 'rails_helper'
 RSpec.describe UsersController, type: :controller do
   render_views
 
+  describe 'GET /users' do
+    it 'redirects to /registrate' do
+      get :index
+      expect(response).to redirect_to(registrate_url)
+    end
+  end
+
   describe 'GET /registrate' do
     before do
       get :new

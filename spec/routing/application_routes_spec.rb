@@ -8,6 +8,10 @@ RSpec.describe 'Application Routes', type: :routing do
   end
 
   # users
+  it 'successfully routes get /users to users#index' do
+    expect(get: '/users').to route_to(controller: 'users', action: 'index')
+  end
+
   it 'successfully routes get /registrate to users#new' do
     expect(get: '/registrate').to route_to(controller: 'users', action: 'new')
   end
