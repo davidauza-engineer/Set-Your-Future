@@ -1,0 +1,7 @@
+<h1 class="top-bar-title"><%= title %></h1>
+<div class="bg-syf-blue d-flex justify-content-between">
+  <a href="<%= back_button_path %>" class="top-bar-link d-flex align-items-center justify-content-center">
+    <%= display_svg('arrow_back.svg') %>
+  </a>
+  <%= submit_tag 'Continuar', form: form_id, class: 'top-bar-link top-bar-action bg-syf-blue' %>
+</div>

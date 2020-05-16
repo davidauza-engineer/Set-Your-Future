@@ -11,7 +11,7 @@ class SignUpPage
     fill_in('Correo electrónico', with: user.email)
     fill_in('Contraseña', with: user.password)
     fill_in('Confirmar contraseña', with: user.password)
-    click_on('Regístrate')
+    click_on('Continuar')
     self
   end
 

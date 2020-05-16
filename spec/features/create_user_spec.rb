@@ -7,6 +7,7 @@ RSpec.feature 'create new user' do
 
   scenario 'guest user registers to the application' do
     sign_up_page.visit_page.register_as(user)
-    expect(page).to have_content(/Bienvenido Bilingüe/)
+    expect(page).to have_title("#{user.id} | Set Your Future")
+    expect(page).to have_content("Gracias por registrarte #{user.username}")
   end
 end

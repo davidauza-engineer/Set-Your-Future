@@ -1,2 +1,13 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<% provide(:title, 'Regístrate') %>
+<div class="view bg-syf-light-blue">
+  <% form_id = 'new-user-form' %>
+  <%= render partial: 'layouts/single_top_bar', locals: { back_button_path: root_path,
+                                                          title: 'REGÍSTRATE',
+                                                          form_id: form_id }
+  %>
+
+  <%= render partial: 'layouts/errors', locals: { model: @user } %>
+
+  <%= render partial: 'user_form', locals: { form_id: form_id } %>
+
+</div>

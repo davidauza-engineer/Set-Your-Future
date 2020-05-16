@@ -1,0 +1,12 @@
+<%= form_with model: @user, local: true, id: form_id, class: 'form-container mt-double' do |f| %>
+  <%= f.text_field :username, placeholder: 'Nombre de usuario', class: 'form-input pl-double pt-standard pb-standard c-syf-dark-gray' %>
+  <div class="form-divider bg-syf-light-gray ml-standard"></div>
+
+  <%= f.email_field :email, placeholder: 'Correo electrónico', class: 'form-input pl-double pt-standard pb-standard c-syf-dark-gray' %>
+  <div class="form-divider bg-syf-light-gray ml-standard"></div>
+
+  <%= f.password_field :password, placeholder: 'Contraseña', class: 'form-input pl-double pt-standard pb-standard c-syf-dark-gray' %>
+  <div class="form-divider bg-syf-light-gray ml-standard"></div>
+
+  <%= f.password_field :password_confirmation, placeholder: 'Confirmar contraseña', class: 'form-input pl-double pt-standard pb-standard c-syf-dark-gray' %>
+<% end %>

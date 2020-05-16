@@ -1,0 +1,13 @@
+<% if model.errors.any? %>
+  <div class="alert alert-danger">
+    <h2>
+      El formulario contiene <%= pluralize(model.errors.count, 'error', plural: 'errores') %>:
+    </h2>
+    <ul>
+      <% model.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+<!--        TODO: check errors language and other possible issues-->
+      <% end %>
+    </ul>
+  </div>
+<% end %>

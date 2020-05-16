@@ -26,16 +26,138 @@ $font-medium: 20px;
 $font-large: 28px;
 
 $syf-dark-gray: #434b54;
-$syf-medium-gray: #878A8F;
-$syf-light-gray: #989DA3;
+$syf-medium-gray: #878a8f;
+$syf-light-gray: #989da3;
 $syf-blue: #3778c2;
+$syf-light-blue: rgba(55, 120, 194, 0.1);
 
 $standard-button: 48px;
+
+// Tags
+
+::placeholder {
+  color: $syf-light-gray;
+}
 
 // Classes
 
 .view {
   width: 100%;
   min-height: 100vh;
+  padding-bottom: $double-margin;
+}
+
+.bg-syf-blue {
   background-color: $syf-blue;
+}
+
+.bg-syf-light-blue {
+  background-color: $syf-light-blue;
+}
+
+.bg-syf-light-gray {
+  background-color: $syf-light-gray;
+}
+
+.c-syf-medium-gray {
+  color: $syf-medium-gray;
+}
+
+.c-syf-dark-gray {
+  color: $syf-dark-gray;
+}
+
+.mt-standard {
+  margin-top: $standard-margin;
+}
+
+.mt-double {
+  margin-top: $double-margin;
+}
+
+.ml-standard {
+  margin-left: $standard-margin;
+}
+
+.ml-double {
+  margin-left: $double-margin;
+}
+
+.pt-standard {
+  padding-top: $standard-margin;
+}
+
+.pt-double {
+  padding-top: $double-margin;
+}
+
+.pb-standard {
+  padding-bottom: $standard-margin;
+}
+
+.pb-double {
+  padding-bottom: $double-margin;
+}
+
+.pl-standard {
+  padding-left: $standard-margin;
+}
+
+.pl-double {
+  padding-left: $double-margin;
+}
+
+.top-bar-link {
+  position: relative;
+  z-index: 1;
+  color: white;
+  min-width: $standard-button;
+  min-height: $standard-button;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.top-bar-title {
+  color: white;
+  font-size: $font-medium;
+  position: absolute;
+  top: 12px;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+.top-bar-action {
+  font-size: $font-small;
+  border: none;
+}
+
+.alert {
+  h2 {
+    font-size: $font-medium;
+  }
+
+  li {
+    font-size: $font-small;
+  }
+}
+
+.form-container {
+  background-color: white;
+  width: 100%;
+  border-top: 1px solid $syf-light-gray;
+  border-bottom: 1px solid $syf-light-gray;
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  font-size: $font-medium;
+}
+
+.form-divider {
+  height: 1px;
 }
